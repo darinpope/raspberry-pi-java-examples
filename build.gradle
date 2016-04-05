@@ -1,0 +1,22 @@
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+}
+
+subprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+project(':gpio-led') {
+    apply plugin: 'application'
+    mainClassName = "GpioLED"
+    dependencies {
+        compile 'com.pi4j:pi4j-core:1.0'
+    }
+}
