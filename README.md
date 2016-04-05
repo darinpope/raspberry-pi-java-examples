@@ -8,8 +8,8 @@ Once you clone the repo. you can build all the projects by running:
 
 Then to run an app:
 
-* change directory to <project>/build/install/<project>
-* then run ./bin/<project>
+* change directory to \<project\>/build/install/\<project\>
+* then run ./bin/\<project\>
 
 ## More Information
 
