@@ -20,3 +20,7 @@ project(':gpio-led') {
         compile 'com.pi4j:pi4j-core:1.0'
     }
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.13'
+}
